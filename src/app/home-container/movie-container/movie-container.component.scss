@@ -1,0 +1,15 @@
+.movie-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 20px;
+
+    .title {
+        font-size: 2em;
+        text-align: center;
+    }
+}
