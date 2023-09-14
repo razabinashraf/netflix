@@ -6,4 +6,5 @@ export interface IMovieDetails {
     season: string;
     rating: number;
     description: string;
+    imageurl: string;
 }
