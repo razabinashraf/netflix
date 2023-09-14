@@ -1,0 +1,29 @@
+<div class="signup-container">
+    <h1>Sign Up Page</h1>
+    <div class="error" *ngIf="error">Passwords dont match</div>
+    <div class="signup-container__form">
+        <div>
+            <label class="signup-container__form-label">Enter Name:</label>
+            <input type="text" name="username" [(ngModel)]="form.name"/>
+        </div>
+        <div>
+            <label class="signup-container__form-label">Enter Email:</label>
+            <input type="email" name="email" [(ngModel)]="form.email"/>
+        </div>
+        <div>
+            <label class="signup-container__form-label">Enter password:</label>
+            <input type="text" name="pswd" [(ngModel)]="form.password"/>
+        </div>
+        <div>
+            <label class="signup-container__form-label">Confirm password:</label>
+            <input type="password" name="cpswd" [(ngModel)]="form.confirmPassword"/>
+        </div>
+    </div>
+    
+    <div class="signup-container__buttons">
+        <button class="signup-container__button-signup" (click)="onSubmit()">Signup</button>
+        <button class="signup-container__button-reset" (click)="onReset()">Reset</button>
+    </div>
+</div>
+
+{{form | json}}
