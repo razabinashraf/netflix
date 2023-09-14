@@ -1,0 +1,26 @@
+.signup-container {
+    margin: 12px;
+    &__from {
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        padding: 12px;
+
+        &-label {
+            font-weight:bold;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 6px;
+        
+        &-signup {
+            background: rgb(9, 62, 62);
+
+        }
+        &-reset {
+            background: rgb(223, 188, 223);
+        }
+    }
+}
