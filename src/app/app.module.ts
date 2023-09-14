@@ -4,15 +4,18 @@ import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './home-container/home-container.component';
 import { HomeContainerModule } from './home-container/home-container.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { AddMovieComponent } from './home-container/add-movie/add-movie.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeContainerModule
+    HomeContainerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

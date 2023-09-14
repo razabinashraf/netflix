@@ -4,6 +4,8 @@ import { MovieContainerComponent } from './movie-container/movie-container.compo
 import { PopularContainerComponent } from './popular-container/popular-container.component';
 import { RecentContainerComponent } from './recent-container/recent-container.component';
 import { HomeContainerComponent } from './home-container.component';
+import { FormsModule } from '@angular/forms';
+import { AddMovieComponent } from './add-movie/add-movie.component';
 
 
 
@@ -12,10 +14,12 @@ import { HomeContainerComponent } from './home-container.component';
     MovieContainerComponent,
     PopularContainerComponent,
     RecentContainerComponent,
-    HomeContainerComponent
+    HomeContainerComponent,
+    AddMovieComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
   ],
 
   exports:[
