@@ -14,12 +14,12 @@ export class UserauthService {
   ) { }
 
   public getUserDetails(): IUserDetails {
-    const userData = this.storeToLocal.GetData(USER_KEY);
+    const userData = this.storeToLocal.getStorage(USER_KEY);
     return this.userDetails;
   }
 
   public setUserDetails(userData: IUserDetails): void {
-    this.storeToLocal.StoreData(USER_KEY,userData);
+    this.storeToLocal.setStorage(USER_KEY,userData);
     this.userDetails = userData;
   }
 
