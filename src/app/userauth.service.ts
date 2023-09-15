@@ -14,7 +14,7 @@ export class UserauthService {
   ) { }
 
   public getUserDetails(): IUserDetails {
-    const userData = this.storeToLocal.getStorage(USER_KEY);
+     this.userDetails = this.storeToLocal.getStorage(USER_KEY);
     return this.userDetails;
   }
 
@@ -27,6 +27,5 @@ export class UserauthService {
     this.getUserDetails();
     return this.userDetails?.email === passedUserData.email && 
            this.userDetails?.confirmPassword === passedUserData.password;
-
   }
 }

@@ -34,7 +34,6 @@ export class AddMovieComponent {
   }
 
   public gotoMovies(){
-    this.router.navigate(['']);
+    this.router.navigate(['home']);
   }
 }
-

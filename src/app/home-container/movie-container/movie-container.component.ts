@@ -8,7 +8,5 @@ import { IMovieDetails } from '../home-container.interface';
 })
 export class MovieContainerComponent {
    @Input() public displayMovie?: IMovieDetails;
-  
-    
   }
 

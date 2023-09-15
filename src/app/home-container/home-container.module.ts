@@ -6,7 +6,7 @@ import { RecentContainerComponent } from './recent-container/recent-container.co
 import { HomeContainerComponent } from './home-container.component';
 import { FormsModule } from '@angular/forms';
 import { AddMovieComponent } from './add-movie/add-movie.component';
-
+import { AddMovieService } from '../add-movie.service';
 
 
 @NgModule({
@@ -23,7 +23,11 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
   ],
 
   exports:[
-    HomeContainerComponent
-  ]
+    HomeContainerComponent,
+    AddMovieComponent,
+  ],
+  providers: [
+    AddMovieService,
+    ],
 })
 export class HomeContainerModule { }

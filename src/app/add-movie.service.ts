@@ -16,4 +16,9 @@ export class AddMovieService {
     this.movieList.push(book);
     this.dbContext.setStorage('movies', this.movieList);
   }
+
+  public getMovies() : Array<IMovieDetails>{
+    this.movieList = this.dbContext.getStorage('movies') || [];
+    return this.movieList
+  }
 }

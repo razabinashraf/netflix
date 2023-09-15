@@ -25,7 +25,6 @@ export class LoginPageComponent {
   }
 
   public onSubmit(): void {
-    console.log("Iamhere");
     const isUserValid = this.userAuthService.validateUser(this.form);
     isUserValid? void this.router.navigate(['home']) : this.error = true;
   }
