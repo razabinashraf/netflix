@@ -1,0 +1,65 @@
+.create-movie {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .create-movie__form {
+      margin-top: 20px;
+
+  
+      div {
+        margin-bottom: 10px;
+  
+        label {
+          display: block;
+          font-size: 16px;
+          margin-bottom: 5px;
+          margin: 0 auto;
+        }
+  
+        input {
+          width: 70%;
+          padding: 10px;
+          font-size: 16px;
+          margin: 0 auto;
+        }
+      }
+    }
+  
+    .create-movie__buttons {
+      margin-top: 20px;
+  
+      button {
+        background-color: red;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+  
+        &.create-movie__buttons-create {
+          background-color: #e50914;
+        }
+  
+        &.create-movie__buttons-goto {
+          background-color: #333;
+        }
+  
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+  

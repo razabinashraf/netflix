@@ -1,0 +1,38 @@
+<div class="create-movie">
+    <h1>Add New Movie</h1>
+    <h3 *ngIf="isCreated == true">Movie Created Successful</h3>
+    <div class="create-movie__form">
+        <div>
+            <label class="create-movie__form-label" for="book-title">Enter Title:</label>
+            <input type="text" name="book-title" id="book-title" [(ngModel)]="movie.title" />
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-author">Enter Author:</label>
+            <input type="text" name="book-author" id="book-author" [(ngModel)]="movie.matchpercent">
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-summary">Summary:</label>
+            <input type="text" name="book-summary" id="book-summary" [(ngModel)]="movie.year">
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-notes">Notes:</label>
+            <input type="text" name="book-notes" id="book-notes" [(ngModel)]="movie.season">
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-rating">Rating</label>
+            <input type="number" name="book-rating" id="book-rating" [(ngModel)]="movie.rating">
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-rating">Description</label>
+            <input type="number" name="book-rating" id="book-rating" [(ngModel)]="movie.description">
+        </div>
+        <div>
+            <label class="create-movie__form-label" for="book-rating">Image URL</label>
+            <input type="number" name="book-rating" id="book-rating" [(ngModel)]="movie.imageurl">
+        </div>
+        <div class="create-movie__buttons">
+            <button class="create-movie__buttons-create" (click)="CreateMovie()">Create</button>
+            <button class="create-movie__buttons-goto" (click)="gotoMovies()">Go To Home</button>
+        </div>
+    </div>
+</div>
