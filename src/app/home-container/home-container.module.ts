@@ -7,6 +7,8 @@ import { HomeContainerComponent } from './home-container.component';
 import { FormsModule } from '@angular/forms';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { AddMovieService } from '../add-movie.service';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { EditMovieComponent } from './edit-movie/edit-movie.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AddMovieService } from '../add-movie.service';
     PopularContainerComponent,
     RecentContainerComponent,
     HomeContainerComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    TopBarComponent,
+    EditMovieComponent
   ],
   imports: [
     CommonModule,

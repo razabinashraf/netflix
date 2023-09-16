@@ -1,15 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AddMovieComponent } from './add-movie.component';
 
-describe('AddMovieComponent', () => {
-  let component: AddMovieComponent;
-  let fixture: ComponentFixture<AddMovieComponent>;
+import { TopBarComponent } from './top-bar.component';
+
+describe('TopBarComponent', () => {
+  let component: TopBarComponent;
+  let fixture: ComponentFixture<TopBarComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddMovieComponent]
+      declarations: [TopBarComponent]
     });
-    fixture = TestBed.createComponent(AddMovieComponent);
+    fixture = TestBed.createComponent(TopBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
