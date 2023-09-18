@@ -28,4 +28,8 @@ export class UserauthService {
     return this.userDetails?.email === passedUserData.email && 
            this.userDetails?.confirmPassword === passedUserData.password;
   }
+
+  public isAuthenticate(): boolean {
+    return !!this.storeToLocal.getStorage(USER_KEY);
+  }
 }

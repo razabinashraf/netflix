@@ -4,6 +4,7 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomeContainerComponent } from './home-container/home-container.component';
 import { AddMovieComponent } from './home-container/add-movie/add-movie.component';
+import { AuthGuardService } from './auth-guard.service';
 
 const routes: Routes = [
   {
@@ -21,11 +22,13 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeContainerComponent
+    component: HomeContainerComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: 'addmovie',
-    component: AddMovieComponent
+    component: AddMovieComponent,
+    canActivate: [AuthGuardService]
   },
 ];
 

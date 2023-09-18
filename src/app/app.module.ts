@@ -10,6 +10,7 @@ import { UserauthService } from './userauth.service';
 import { LocalstorageService } from './localstorage.service';
 import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { AuthGuardService } from './auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
   providers: [
     LocalstorageService,
     UserauthService,
+    AuthGuardService
     ],
   bootstrap: [AppComponent]
 })
