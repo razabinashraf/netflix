@@ -9,6 +9,7 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
 import { AddMovieService } from '../add-movie.service';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
+import { HomeContainerRoutingModule } from './home-container-routing.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { EditMovieComponent } from './edit-movie/edit-movie.component';
   imports: [
     CommonModule,
     FormsModule,
+    HomeContainerRoutingModule,
   ],
 
   exports:[

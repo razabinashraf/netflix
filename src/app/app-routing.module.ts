@@ -24,6 +24,10 @@ const routes: Routes = [
     component: HomeContainerComponent
   },
   {
+     path: '',
+      loadChildren: () => import('./home-container/home-container.module').then(m => m.HomeContainerModule)
+     },
+  {
     path: 'addmovie',
     component: AddMovieComponent
   },
