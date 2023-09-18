@@ -10,6 +10,8 @@ import { UserauthService } from './userauth.service';
 import { LocalstorageService } from './localstorage.service';
 import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SecureInterceptor } from './secure.interceptor';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
   providers: [
     LocalstorageService,
     UserauthService,
+    { provide: HTTP_INTERCEPTORS, useClass: SecureInterceptor, multi: true }
     ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
