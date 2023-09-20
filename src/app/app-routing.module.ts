@@ -26,6 +26,10 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
+     path: '',
+      loadChildren: () => import('./home-container/home-container.module').then(m => m.HomeContainerModule)
+     },
+  {
     path: 'addmovie',
     component: AddMovieComponent,
     canActivate: [AuthGuardService]
