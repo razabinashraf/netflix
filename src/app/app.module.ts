@@ -10,7 +10,7 @@ import { UserauthService } from './userauth.service';
 import { LocalstorageService } from './localstorage.service';
 import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { SecureInterceptor } from './secure.interceptor';
 import { AuthGuardService } from './auth-guard.service';
 
@@ -24,7 +24,8 @@ import { AuthGuardService } from './auth-guard.service';
     BrowserModule,
     AppRoutingModule,
     HomeContainerModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     LocalstorageService,
